@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Nike Shoes</title>
+</head>
+<body>
+    <header>
+        Nike Shoes
+        <canvas id="nikeLogo" class="logo-top-right"></canvas>
+    </header>
+    <div class="content">
+        <div class="shoe">
+            <h2>Nike Air Zoom Pegasus</h2>
+            <img src="slike/airzoom.png" alt="Nike Air Zoom Pegasus">
+            <p>The perfect running shoes for any terrain. Comfortable, stylish, and durable.</p>
+        </div>
+        <div class="shoe">
+            <h2>Nike Air Force 1</h2>
+            <img src="slike/airforce.png" alt="Nike Air Force 1">
+            <p>Classic sneakers that never go out of style. Perfect for everyday wear.</p>
+        </div>
+        <div class="shoe">
+            <h2>Nike React Infinity</h2>
+            <img src="slike/reactinfinity.png" alt="Nike React Infinity">
+            <p>Engineered for ultimate comfort and support on long runs.</p>
+        </div>
+    </div>
+    <script>
+        const canvas = document.getElementById('nikeLogo');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = 300;
+        canvas.height = 250;
+
+        ctx.scale(4, 4);
+
+        ctx.fillStyle = 'white';
+        ctx.strokeStyle = 'white';
+        ctx.lineWidth = 1;
+
+        ctx.beginPath();
+        ctx.moveTo(25.67, 30.73);
+        ctx.bezierCurveTo(23.85, 31.3, 19.61, 30.41, 21.72, 23.37);
+        ctx.bezierCurveTo(21.72, 23.37, 19.68, 27.2, 19.68, 27.2);
+        ctx.bezierCurveTo(19.68, 27.2, 18.77, 29.5, 18.77, 29.5);
+        ctx.bezierCurveTo(18.77, 29.5, 17.95, 31.5, 18.02, 33.07);
+        ctx.bezierCurveTo(18.09, 34.63, 19.29, 39.5, 25.6, 35.63);
+        ctx.bezierCurveTo(31.91, 31.77, 47.26, 22.88, 47.22, 22.7);
+        ctx.bezierCurveTo(47.13, 22.36, 25.71, 30.79, 25.67, 30.73);
+        ctx.closePath();
+
+        ctx.stroke();
+        ctx.fill();
+    </script>
+</body>
+</html>
