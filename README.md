@@ -1,4 +1,4 @@
-<h1> Nike stran </h1>
+<h1> Nike Page </h1>
 
 
 Welcome to the Nike Shoes Page! This is a modern, responsive webpage that highlights popular Nike shoe models, featuring a dynamic design, interactive elements, and a custom-drawn Nike logo.
