@@ -1,59 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Nike Shoes</title>
-</head>
-<body>
-    <header>
-        Nike Shoes
-        <canvas id="nikeLogo" class="logo-top-right"></canvas>
-    </header>
-    <div class="content">
-        <div class="shoe">
-            <h2>Nike Air Zoom Pegasus</h2>
-            <img src="slike/airzoom.png" alt="Nike Air Zoom Pegasus">
-            <p>The perfect running shoes for any terrain. Comfortable, stylish, and durable.</p>
-        </div>
-        <div class="shoe">
-            <h2>Nike Air Force 1</h2>
-            <img src="slike/airforce.png" alt="Nike Air Force 1">
-            <p>Classic sneakers that never go out of style. Perfect for everyday wear.</p>
-        </div>
-        <div class="shoe">
-            <h2>Nike React Infinity</h2>
-            <img src="slike/reactinfinity.png" alt="Nike React Infinity">
-            <p>Engineered for ultimate comfort and support on long runs.</p>
-        </div>
-    </div>
-    <script>
-        const canvas = document.getElementById('nikeLogo');
-        const ctx = canvas.getContext('2d');
+<!DOCTYPE HTML>
 
-        canvas.width = 300;
-        canvas.height = 250;
+<html>
+	<head>
+		<title>Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="viri/css/main.css" />
+		<noscript><link rel="stylesheet" href="viri/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-        ctx.scale(4, 4);
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Pozdravljeni!</a></li>
+							<li><a href="#one">Prikaz</a></li>
+							<li><a href="#three">Info</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-        ctx.fillStyle = 'white';
-        ctx.strokeStyle = 'white';
-        ctx.lineWidth = 1;
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        ctx.beginPath();
-        ctx.moveTo(25.67, 30.73);
-        ctx.bezierCurveTo(23.85, 31.3, 19.61, 30.41, 21.72, 23.37);
-        ctx.bezierCurveTo(21.72, 23.37, 19.68, 27.2, 19.68, 27.2);
-        ctx.bezierCurveTo(19.68, 27.2, 18.77, 29.5, 18.77, 29.5);
-        ctx.bezierCurveTo(18.77, 29.5, 17.95, 31.5, 18.02, 33.07);
-        ctx.bezierCurveTo(18.09, 34.63, 19.29, 39.5, 25.6, 35.63);
-        ctx.bezierCurveTo(31.91, 31.77, 47.26, 22.88, 47.22, 22.7);
-        ctx.bezierCurveTo(47.13, 22.36, 25.71, 30.79, 25.67, 30.73);
-        ctx.closePath();
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Pozdrav!</h1>
+							<p>To je stran namenjena za prikaz treh različic NIKE logotipa.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Pokaži!</a></li>
+							</ul>
+						</div>
+					</section>
 
-        ctx.stroke();
-        ctx.fill();
-    </script>
-</body>
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<div class="image">
+								<svg xmlns="http://www.w3.org/2000/svg" width="5.33335in" height="3in" viewBox="0 -80 320 230">
+									<path id="Neimenovano" fill="black" stroke="black" stroke-width="1"
+										d="M 46.77,34.98
+										   C -96.00,225.33 129.67,119.00 314.02,36.98
+											 40.00,112.67 14.00,115.33 46.77,34.98 Z" />
+								</svg>
+							</div>
+							<div class="content">
+								<div class="inner">
+									<h2>SVG</h2>
+									<p>SVG različica NIKE logotipa ustvarjena s pomočjo programa GIMP. Začrtana oblika z orodjem "Poti" in nato izvožena pot v obliki SVG.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="slike/Nike.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>PNG</h2>
+									<p>SVG različico logotipa sem pretvoril v PNG tako, da sem zajel zaslon, sliko obrezal in jo shranil s PNG končnico.</p>
+
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><div id="mycanvas">  </div></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Bezierjeva Krivulja</h2>
+									<p>SVG različico sem pretvoril v Bezierjevo krivuljo s pomočjo spletnega orodja.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+
+					
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<div class="split style1">
+							
+								<section>
+									<ul class="contact">
+										<li >
+											<h3>Ustvaril: Patrik Miletić</h3>
+										</li>
+										<li>
+											<h3>Mentor: Boštjan Vouk</h3>
+										</li>
+										<li>
+											<h3>ŠCNG ERŠ Nova Gorica</h3>
+										</li>
+
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="viri/js/jquery.min.js"></script>
+			<script src="viri/js/jquery.scrollex.min.js"></script>
+			<script src="viri/js/jquery.scrolly.min.js"></script>
+			<script src="viri/js/browser.min.js"></script>
+			<script src="viri/js/breakpoints.min.js"></script>
+			<script src="viri/js/util.js"></script>
+			<script src="viri/js/main.js"></script>
+			<script>
+				var canvas = document.getElementById('myCanvas');
+				var ctx = canvas.getContext('2d');
+		
+				// Define your Bezier curve path
+				ctx.beginPath();
+				ctx.moveTo(46.77, 34.98); // Start point
+		
+				// Control points and curve
+				ctx.bezierCurveTo(-96.00, 225.33, 129.67, 119.00, 314.02, 36.98);
+				ctx.bezierCurveTo(40.00, 112.67, 14.00, 115.33, 46.77, 34.98);
+				
+				// Style and draw the curve
+				ctx.strokeStyle = 'black';
+				ctx.lineWidth = 1;
+				ctx.stroke(); // Render the path
+		
+			</script>
+
+	</body>
 </html>
