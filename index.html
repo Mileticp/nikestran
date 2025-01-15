@@ -10,7 +10,6 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
@@ -24,10 +23,8 @@
 				</div>
 			</section>
 
-		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Pozdrav!</h1>
@@ -38,7 +35,6 @@
 						</div>
 					</section>
 
-				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
 							<div class="image">
@@ -54,7 +50,7 @@
 									<h2>SVG</h2>
 									<p>SVG različica NIKE logotipa ustvarjena s pomočjo programa GIMP. Začrtana oblika z orodjem "Poti" in nato izvožena pot v obliki SVG.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://www.w3schools.com/graphics/svg_intro.asp" class="button">Več</a></li>
 									</ul>
 								</div>
 							</div>
@@ -70,22 +66,19 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><div id="mycanvas">  </div></a>
+							<canvas class="image" id="myCanvas" width="320" height="230"></canvas>
 							<div class="content">
 								<div class="inner">
 									<h2>Bezierjeva Krivulja</h2>
 									<p>SVG različico sem pretvoril v Bezierjevo krivuljo s pomočjo spletnega orodja.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://www.w3schools.com/jsref/canvas_beziercurveto.asp" class="button">Več</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</section>
 
-
-					
-				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<div class="split style1">
@@ -110,7 +103,6 @@
 
 			</div>
 
-		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
@@ -118,7 +110,6 @@
 				</div>
 			</footer>
 
-		<!-- Scripts -->
 			<script src="viri/js/jquery.min.js"></script>
 			<script src="viri/js/jquery.scrollex.min.js"></script>
 			<script src="viri/js/jquery.scrolly.min.js"></script>
@@ -129,21 +120,24 @@
 			<script>
 				var canvas = document.getElementById('myCanvas');
 				var ctx = canvas.getContext('2d');
-		
-				// Define your Bezier curve path
+	
+				ctx.scale(0.8, 0.8); 
+				ctx.translate(30, 40); 
+	
 				ctx.beginPath();
-				ctx.moveTo(46.77, 34.98); // Start point
-		
-				// Control points and curve
+				ctx.moveTo(46.77, 34.98); 
+	
 				ctx.bezierCurveTo(-96.00, 225.33, 129.67, 119.00, 314.02, 36.98);
 				ctx.bezierCurveTo(40.00, 112.67, 14.00, 115.33, 46.77, 34.98);
-				
-				// Style and draw the curve
+	
+				ctx.fillStyle = 'black';
+				ctx.fill();
+	
 				ctx.strokeStyle = 'black';
 				ctx.lineWidth = 1;
-				ctx.stroke(); // Render the path
-		
+				ctx.stroke();
 			</script>
+	
 
 	</body>
 </html>
